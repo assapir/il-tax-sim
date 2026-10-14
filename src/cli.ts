@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 import { readFileSync } from 'node:fs';
+import { parseArgs } from 'node:util';
 import { simulate, type Input } from './index.ts';
 
-const file = process.argv[2];
-if (!file) {
+const { values, positionals: [file] } = parseArgs({
+  allowPositionals: true,
+  options: { help: { type: 'boolean', short: 'h' } },
+});
+if (values.help || !file) {
   console.error('usage: il-tax-sim <input.json>');
-  process.exit(1);
+  process.exit(values.help ? 0 : 1);
 }
 const input: Input = JSON.parse(readFileSync(file, 'utf8'));
 const r = await simulate(input);
