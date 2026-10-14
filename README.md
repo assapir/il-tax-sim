@@ -79,4 +79,4 @@ node --test test/
 
 ## License
 
-MIT
+GPL-3.0-or-later. Copyright © 2026 Assaf Sapir. See [LICENSE](LICENSE).
