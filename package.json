@@ -1,0 +1,12 @@
+{
+  "name": "il-tax-sim",
+  "version": "0.1.0",
+  "description": "Client for the Israel Tax Authority's annual employee tax simulator (סימולטור מס שנתי לשכירים)",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "bin": { "il-tax-sim": "./src/cli.ts" },
+  "engines": { "node": ">=23.6" },
+  "scripts": { "test": "node --test test/" },
+  "license": "MIT",
+  "author": "Assaf Sapir"
+}

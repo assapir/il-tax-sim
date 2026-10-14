@@ -1,0 +1,21 @@
+{
+  "year": 2024,
+  "withheld": 120000,
+  "children": [2012, 2018, 2022, 2024],
+  "registered": {
+    "sex": "male",
+    "birth": { "month": 1, "year": 1985 },
+    "income": 480000,
+    "insuredIncome": 400000,
+    "employerPensionDeposits": 60000,
+    "pensionDeposits": 24000
+  },
+  "spouse": {
+    "sex": "female",
+    "birth": { "month": 6, "year": 1987 },
+    "income": 210000,
+    "insuredIncome": 210000,
+    "employerPensionDeposits": 27000,
+    "pensionDeposits": 12600
+  }
+}
