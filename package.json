@@ -7,6 +7,6 @@
   "bin": { "il-tax-sim": "./src/cli.ts" },
   "engines": { "node": ">=23.6" },
   "scripts": { "test": "node --test test/" },
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "author": "Assaf Sapir"
 }
